@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>PharmEase :: Product Details</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css"/>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
+
+
+</head>
+<body>
+  <header id="header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="logo-img">
+            <img src="image/logo.png" class="img-fluid logo">
+          </div>
+          <div class="manu-bar">
+            <i class="fa-solid fa-bars " onclick="abc()"></i>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="top-bar">
+            <div class="searc">
+              <input type="search" class="form-control" placeholder="&#xF002; Search products" style="font-family:Arial, FontAwesome">
+            </div>
+            <div class="upload">
+              <a href="#" id="upload"><i class="fa-solid fa-arrow-up-from-bracket"></i>Upload Prescription</a>
+            </div>
+            <div class="log-sin">
+              <a href="#"><i class="fa-solid fa-cart-shopping"><span>10</span></i></a>
+              <p><a href="login.html">Login</a><span></span><a href="signup-retailer.html">Signup</a></p>
+              <!-- profile start -->
+              <!-- <div class="profile">
+                <div class="profile-img">
+                    <img src="image/profile.jpg" class="img-fluid" alt="">
+                </div>
+                <ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Anik
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">My Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div> -->
+              <!--profile end-->
+            </div>
+          </div>
+          <div class="main-bar menu-box">
+             <div class="gape"></div>
+             <div class="nav">
+               <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="ourmedicines.html">Our Medicines</a></li>
+                  <li><a href="aboutus">About Us</a></li>
+                  <li class="getoffers"><a href="getoffers">Get Offers</a><span class="Flash"><a href="#">Flash Sale</a></span></li>
+                </ul>
+                <i class="fa-solid fa-xmark" onclick="bcd()"></i>
+             </div>
+             <div class="need-help">
+              <a href="#">Need Help?</a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="product-details">
+      <div class="container">
+          <div class="row gy-lg-0 gy-4">
+            <div class="col-xl-5 col-lg-6 col-md-10 offset-lg-0 offset-md-1">
+               <div class="prodetails-img">
+                   <div class="prodetils-left">
+                    <div class="proleft-box">
+                       <img src="image/product-main.png" onclick="imgchange(this)" class="img-fluid" alt="">
+                    </div>
+                    <div class="proleft-box">
+                       <img src="image/productList-2.png" onclick="imgchange(this)" class="img-fluid" alt="">
+                    </div>
+                    <div class="proleft-box">
+                        <img src="image/productList-3.png" onclick="imgchange(this)" class="img-fluid" alt="">
+                    </div>
+                    <div class="proleft-box">
+                        <img src="image/productList-4.png" onclick="imgchange(this)" class="img-fluid" alt="">
+                    </div>
+                   </div>
+                   <div class="detimain-img">
+                        <div class="prodetils-right">
+                           <img src="image/product-main.png" id="fullimg-box" class="img-fluid" alt="">
+                        </div>
+                        <div class="detimain-btn">
+                            <div class="prise-btn">1 piece</div>
+                            <!-- <input type="number" class="form-control prise-btn" placeholder="1 piece" id="exampleInputNumber"> -->
+                            <div class="prise-value">₹60</div>
+                            <a href="#" class="price-main-btn">Add to Cart</a>
+                        </div>
+                   </div>
+               </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-10 offset-lg-0 offset-md-1">
+                <div class="prodetails-contant">
+                     <div class="detils-top">
+                         <h3>Safi Natural Blood Purifier Syrup 200 ml</h3>
+                         <p>Manufactured By Hamdard <b>(Wakf) Laboratories</b></p>
+                     </div>
+                     <div class="detils-bottom">
+                     <div class="detils-topsec">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Safi syrup is known for its best purifying syrup for blood.</li>
+                            <li>It helps in eliminating the toxins from the bloodstream.</li>
+                            <li>It improves digestion.</li>
+                            <li>It also helps in indigestion and constipation.</li>
+                        </ul>
+                     </div>
+                     <div class="deti-description">
+                         <h4>Description</h4>
+                         <p>Safi syrup is best for purifying the blood. As it contains herbal extracts it can cure indigestion, constipation, nose bleeds and acne boils. It helps in the removal of the toxins from the blood. It improves the complexion and gives you a healthy life.</p>
+                     </div>
+                     <div class="deti-description">
+                        <h4>Storage</h4>
+                        <p>Store this syrup at room temperature protected from sunlight, heat, and moisture. Keep away from reaching out of children and pets. Ensure that the unused medicine is disposed of properly.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+
+
+ <section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Our Company</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Press Coverages</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Business Partnership</a></li>
+          <li><a href="#">Become a Health Partner</a></li>
+          <li><a href="#">Partner With Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Privacy Policies</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">IP Policy</a></li>
+          <li><a href="#">Grievance Redressal Poilicy</a></li>
+          <li><a href="#">Partner With Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Our Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policies</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">IP Policy</a></li>
+          <li><a href="#">Grievance Redressal Poilicy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Connect with Us</h4>
+        <ul class="icons">
+          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-0">
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Download The App</h4>
+        <ul class="pay">
+          <li><a href="#"><img src="image/googleplay.png" class="img-fluid" alt=""></a></li>
+          <li><a href="#"><img src="image/appstore.png" class="img-fluid" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row bottom-footer">
+      <div class="col-sm-2 col-0"></div>
+      <div class="col-sm-8">
+        <p>All Rights Reserved © PharmEase 2023 | Designed and Developed by <a href="https://www.desuntechnology.in/" target="_blank">Desun Technology</a></p> 
+      </div>
+      <div class="col-sm-4 col-0"></div>
+    </div>
+  </div>
+ </section>
+
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/script.js"></script>
+</html>
